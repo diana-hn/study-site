@@ -504,4 +504,8 @@ body {
     .images-row {
         flex-wrap: wrap;
     }
+
+    .container-block {
+        flex-wrap: wrap;
+    }
 }
