@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
 body {
     margin: 0;
     font-family: "MerriweatherSans";
@@ -440,7 +447,7 @@ body {
     line-height: 0.5;
 }
 
-.footer-container{
+.footer-container {
     display: grid;
     justify-content: center;
     gap: 30px;
@@ -450,13 +457,13 @@ body {
     padding: 0 20px;
 }
 
-.footer-end{
+.footer-end {
     margin: 0 auto;
     text-align: center;
     margin: 0;
 }
 
-.footer-end h6{
+.footer-end h6 {
     margin: 0;
     font-weight: lighter;
     opacity: 0.5;
@@ -467,4 +474,34 @@ body {
     margin: 0 auto;
     align-items: center;
     padding: 0 20px 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .links {
+        display: none;
+    }
+
+    .features-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .services-block {
+        flex-wrap: wrap;
+    }
+
+    .portfolio-filters {
+        flex-wrap: wrap;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .end-container {
+        padding: 20px;
+    }
+
+    .images-row {
+        flex-wrap: wrap;
+    }
 }
